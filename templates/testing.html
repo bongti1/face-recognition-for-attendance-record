@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+    <section>
+        <form class="form-controll" method="POST" novalidate>
+            {% csrf_token %}
+            <label for="label">Label : </label>
+            <input type="number" name="label" min="0">
+            <label for="id">Id : </label>
+            <input type="text" name="id">
+            <label for="name">Name : </label>
+            <button type="submit">submit</button>
+        </form>
+    </section>
+</html>
