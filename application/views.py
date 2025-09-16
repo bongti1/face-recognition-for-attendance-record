@@ -157,7 +157,7 @@ def Training_Model():
     faces,faceID=fr.labels_for_training_data(r'D:\Introduction_to_python\FRAMS\app\application\image') #Give path to the train-images folder which has both labeled folder as 0 and 1
     face_recognizer=fr.train_classifier(faces,faceID)
     face_recognizer.save(r'D:\Introduction_to_python\FRAMS\app\application\trainingData.yml')#It will save the trained model. Just give path to where you want to save
-    name={0:"H",1:"C",2:"Ho",3:"So",4:"Som"} #Change names accordingly. If you want to recognize only one person then write:- name={0:"name"} thats all. Dont write for id number 1.
+    name={0:"Dara",1:"Cheata",2:"Joady",3:"Joo",4:"Som"} #Change names accordingly. If you want to recognize only one person then write:- name={0:"name"} thats all. Dont write for id number 1.
     for face in faces_detected:
         (x,y,w,h)=face
         roi_gray=gray_img[y:y+h,x:x+h]
